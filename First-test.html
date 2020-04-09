@@ -59,6 +59,7 @@ I didn't do much of coding apart from learning linking web pages within websites
 <th scope="col">Worldwide</th>
 
 </tr>
+<br /><br />
 
 <tr>
 <th scope="row">Confirmed</th>
@@ -73,6 +74,7 @@ I didn't do much of coding apart from learning linking web pages within websites
 <td>30,217</td>
 <td><b>1,331,032</b></td>
 </tr>
+<br /><br />
 
 <tr>
 <th scope "row">Recovered</th>
@@ -87,6 +89,7 @@ I didn't do much of coding apart from learning linking web pages within websites
 <td>1,326</td>
 <td><b>275,851</b></td>
 </tr>
+<br /><br />
 
 <tr>
 <th scope="row">Deaths</th>
@@ -111,7 +114,8 @@ I didn't do much of coding apart from learning linking web pages within websites
 
 
 </table>
-<br />
+<br /><br /><br />
+
 <h2>Day 7</h2>
 <p>Today I have been learning about <strong>Forms</strong> , a topic I am excited about and intend to apply my knowledge to this website or related websites of which links can be followed <a href="file:///Users/collins/Downloads/MenuProject/Menu.html">here</a> 
 <forms action="http://www.example.com/login.php">
@@ -120,7 +124,10 @@ I didn't do much of coding apart from learning linking web pages within websites
 </p>Password:
 <input type"text" name="password" size="15" maxlength="30" />
 </forms>
-<br />
+<br /><br /><br />
+
+
+
 
 <form action="http://www.example.com/profile.php">
 <p> Please select your favourite<strong> cuisine:</strong>
@@ -129,7 +136,18 @@ I didn't do much of coding apart from learning linking web pages within websites
 <input type="checkbox" name="cuisine" value="English" checked="checked" />English
 <input type="checkbox" name="cuisine" value="Mediterranean" checked="checked" />Mediterranean
 </p>
-<br />
+<br /><br /><br />
+
+
+<form action="http://www.example.com/profile.php">
+<p>What is your favourite <strong>city?</strong></p>
+<select name="city">
+<option value="London">London</option>
+<option value="Paris">Paris</option>
+<option value="Amsterdams">Amsterdams</option>
+</select>
+</forms>
+<br /><br />
 
 <form action="http://www.example.com/profile.php">
 <p> Please select your favourite<strong> meal</strong>:
@@ -138,15 +156,129 @@ I didn't do much of coding apart from learning linking web pages within websites
 <input type="radio" name="meal" value="Egyptian Salmon" checked="checked" />Egyptian Salmon
 <input type="radio" name="meal" value="Fish and Chips" checked="checked" />Fish and Chips
 </p>
-<br />
+<br /><br /><br />
 
 
 <forms action="http://www.example.com/comments.php">
 <p>What do you think of the Website?</p>
 <textarea name="comments" cols="40" rows="8">Enter your comments... </textarea>
 </forms>
-<br />
+<br /><br /><br />
 
+
+
+<h2>Day 8</h2>
+<p>Today I continued with learning forms. I enjoyed the topic and quite like testing the features. Only wish I had a live server to access. Quite glad with my progress on this journey. And intend to utilise the current lockdown. Covid19 is still claiming many lives-887 deaths in the UK today (9/4/20). On the positive side though, our Prime Minister is out of intensive care but still in the general ward. We wish him the best and our sincere condolences to all that have lost loved ones who in most cases never got the chance to give their farewells.
+</p>
+<label>age: <input type="text" name="age" /><label><br />
+Gender:
+<input id="female" type="radio" name="gender" value="f">
+<label for="female">Female</label>
+<input id="male" type="radio" name="gender" value="M">
+<label for ="male">Male</label><br /><br />
+
+
+
+<fieldset>
+<legend>Contact details</legend>
+<label>Email:<br />
+<input type="text" name="email" /><label><br />
+<label>mobile:<br />
+<input type="text" name="mobile" /><label><br />
+
+<label>Telephone:<br /><br /><br />
+
+<input type="text" name="telephone" /><label>
+</fieldset>
+
+<br /><br />
+
+<form action="http://www.example.com/profile.php">
+<p>Do you play any of the following instruments? (You can select more than one option by holding down control on a PC or command on a Mac while selecting a different options.)</p>
+<select name="instruments" size="6" multiple="multiple">
+<option value="guitar"selected="selected">Guitar</options>
+<option value="Drums"selected="selected">Drums</options>
+<option value="Keyboard"selected="selected">Keyboard</options>
+<option value="Bass"selected="selected">Bass</options>
+<option value="Violin"selected="selected">Violin</options>
+<option value="Piano"selected="selected">Piano</options>
+</select>
+</form><br /><br />
+
+
+
+<form action="http://www.example.com/profile.php"method="post">
+<p><strong>Please upload your CV in PDF,Doc format:</strong></p>
+<input type="file" name="user cv"/><br />
+<input type="submit" value="upload" />
+</form>
+<br /><br />
+
+<form action="http://www.example.com/subscribe.php">
+<p>Subscribe to our email list:</p>
+<input tyoe="text" name="email" />
+<input type="submit" name="subscribe" value="Subscribe" />
+</form>
+<br /><br /><br />
+
+<p>Add an image</>
+<form action="http://www.example.com/add.php">
+<button><img src="images/add.gif" alt="add" width="20" height="20"/> Add</button>
+<input type="hidden" name="bookmark" value="lyrics" />
+</form>
+<br /><br />
+
+<p>Form Validation
+<form action="http://www.example.com/login/" method="post">
+<label for="username">Username:</label>
+<input type="text" name="username" required="required" /><br />
+
+<label for="password">Password:</label>
+<input type="text" name="Password" required="required" />
+
+<input type="submit" value="Submit" />
+</form><br /> <br />
+
+
+<p>Date input</p>
+<form action="http://www.example.com/login/" method="bookings/" method="post">
+<label for "depart">Departure date:</label>
+<input type="date" name="depart" />
+<input type="submit" value="Submit" />
+</form>
+<br /><br />
+
+<p>Email input</p>
+<form action="http://www.example.org/subscribe.php">
+<p>Please enter you email address:</p>
+<input type="email name="email" />
+<input type="submit" value="submit" />
+</form>
+<br /><br />
+
+
+
+<p>URL input</p>
+<form action="http://www.example.org/subscribe.php">
+<p>Please enter you website address:</p>
+<input type="url" name="website" />
+<input type="submit" value="submit" />
+</form><br /><br />
+
+
+<p>Search Input</p>
+<form action="http://www.example.org/search.php">
+<p>Search</p>
+<input type="search" name="search" />
+<input type="submit" value="Search" />
+</form><br /><br />
+
+<p>Search with placeholder </p>
+<form action="http://www.example.org/search.php">
+<p>Search</p>
+<input type="search" name="search" placeholder="Enter keyword" />
+<input type="submit" value="Search" />
+</form><br /><br />
 
 
 

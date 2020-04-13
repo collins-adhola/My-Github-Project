@@ -1,7 +1,13 @@
+<!DOCTYPE html>
 <html>
 <head>
 <center>
 <title> My First Web Page Created on the 29/03/2020</title>
+<meta name="description" content="This page is a chronological journey of my web programing study. It also contains the Covid19 epidemic" />
+<meta name="keyword" content="Coding, html, Covid19, corona virus" />
+<meta http-equiv="author" content="Collins Adhola" />
+<meta http-equiv="pragma" content="no-cache" /> <!--prevents the browser from caching the page-(storing it locally to save downloading it on subsequent visits-->
+<meta http-equiv="expires" content="Fri. 10 Apr 2020 23:59:59 GMT" /> <!--This states when the page can expire . The date doesn't have to be in that first-->
 </head>
 <body>
 <h3>About the author </h3> 
@@ -185,8 +191,7 @@ Gender:
 <input type="text" name="email" /><label><br />
 <label>mobile:<br />
 <input type="text" name="mobile" /><label><br />
-
-<label>Telephone:<br /><br /><br />
+<label>Telephone:<br />
 
 <input type="text" name="telephone" /><label>
 </fieldset>
@@ -256,7 +261,7 @@ Gender:
 </form>
 <br /><br />
 
-
+<div>
 
 <p>URL input</p>
 <form action="http://www.example.org/subscribe.php">
@@ -264,7 +269,7 @@ Gender:
 <input type="url" name="website" />
 <input type="submit" value="submit" />
 </form><br /><br />
-
+</div>
 
 <p>Search Input</p>
 <form action="http://www.example.org/search.php">
@@ -273,14 +278,52 @@ Gender:
 <input type="submit" value="Search" />
 </form><br /><br />
 
+<div>
 <p>Search with placeholder </p>
 <form action="http://www.example.org/search.php">
 <p>Search</p>
 <input type="search" name="search" placeholder="Enter keyword" />
 <input type="submit" value="Search" />
 </form><br /><br />
+</div>															
 
 
+<h3> Day 9 </h3>
+<p>For the past 2 days have been learning how to add video and audio to a html website. </p> <br />
+
+<h5>A video of Razianne playing a violin- Adding HTML5 Video</h5>
+<video src="Razianne violin.mov" poster="Razianne.jpeg" width="400" height="300" 
+preload
+Controls
+loops>
+<p>A video of Razianne playing a violin</p>
+</video>
+<br />
+
+
+
+
+<h5> A video of Kezianne Modeling -Adding HTML5 Video</h5>
+<video src="KezianneModels.mp4" poster="KezianneCyprus.jpeg" width="400" height="300" 
+preload
+Controls
+loops>
+<p>A video of Kezianne Modeling</p>
+</video>
+<br />
+
+<video poster="images/KezianneCyprus.jpeg" width="400" height="320" preload controls loop>
+<source scr="video/KezianneModels.mp4" type='video/mp4:codecs="cvcl.42E01E. mp4a.40.2"' />
+<source scr""Razianne violin.mov" type='video/mov:codecs="vp8.vorbis"' />
+<p>A video of kezianne and Razianne showcasing</p>
+</video>
+
+
+
+<h5>Adding audio to my page of 'TheOneThing Book</h5>
+<audio src="TheONEthing.mp3" controls autoplay>
+<p>This browser does not support our audio format.</p>
+</audio>
 
 </body>
 </centre>

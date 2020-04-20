@@ -10,43 +10,109 @@
 <meta http-equiv="expires" content="Fri. 10 Apr 2020 23:59:59 GMT" /> <!--This states when the page can expire . The date doesn't have to be in that first-->
 
 <style>
-H2 {
-Color:purple ;
-Font-size:50px;
-Background-color:blue;
+H2, h3 {
+Text-transform:uppercase;
+Color:blue ;
+Font-size:24px;
+Background-color:none;
+Font-family:serif, georgia, verdana;
+
+}
+
+h3 {
+Color:white;
+
+text-decoration:blink;
+text-transform:capitalize;
 }
 h1 {
 Color:purple;
-Font-size:70px
+Font-size:32px;
+Font-family:helvetica,serif, georgia, verdana;
+
+}
 
 body {
-Background-color:grey;
+Background-color:blue;
+Font-size:16px;
+text-shadow: 1px 1px 3px #666666;
+font-family:helvetica,ariel, verdana;
+
 }
 p {
-Color:red;
-Background-color:grey;
+Color:gren;
+Font-family:verdana, georgia, Ariel;
+line-height: 1.6em;
+
+}
+p.intro:first-line {
+font-size: 200%
+	font-weight: bold;
+}
+.credits {
+font-family:impact,serif, georgia;
+Color:blue;
+font-style: italic;
+font-weight: normal;
+}
+#main-heading {
+	color: blue;
 }
 
 
+input {
+	padding: 6px 12px 6px 12px;
+	border: 1px solid #665544;
+	color: #blue;
+
+}
+
+input.submit:hover {
+	background color:green;
+}
+input.submit:active {
+	background-color: yellow;
+}
+
+input.text {
+	color:#cccccc;
+}
+input.text:focus {
+	color:yellow;
+}
 
 
-
-
+div {
+	height: 200px;
+	width: 200px
+	background-color:yellow;
+}
+td.description {
+	min-width: 450px;
+	max-width: 650px;
+	text-align: left;
+	padding: 5px;
+	margin: 0px;
+}
 
 </style>
 
 
 </head>
 <body>
- <body style="background-color:grey;text-align:center">
+ <body style="background-color:grey;font-family:helvetica;text-align:center:line-height:1.6em;text-transform:letter-spacing:0.2em : text-shadow: 1px 1px 3px #666666;text-transform:word-spacing:1em">
+
+
+<h1 style=text-align="right";id="main-heading"> Welcome to my first Blog</h1>
     
-<h3>About the author </h3> 
+
+	<h3 class="credits">About the author </h3> 
+
 <figure>
 <img src="outdoors.JPEG" alt=About the author width="200 height="200">
-<figcaption>Collins is food critic who enjoys fine dinning and experimenting with a variety of recipes</figcaption>
+<figcaption>Collins Adhola is upcoming Web Developer and Network Engineer. He is a a keen follower of politics and a food critic who enjoys fine dinning and experimenting with a variety of recipes</figcaption>
 
-<h1> Welcome to my first Blog</h1>
-<img src="kitten.jpeg">
+
 
 <h2>Day 1</h2>
 <p> This is an HTML page that I created in TextEdit.</p>
@@ -56,8 +122,7 @@ Background-color:grey;
 <p>Today was my son's <strong>4<sup>th</sup>Birthday!</strong>.<br />We had initially planned to have it in a <em>kids play area</em> somewhere in London,<br />but unfortunately the current<I>'Stay Home' policy</I> left us with no alternative but a house celebration.</p>
 <p><abbr title="Prime Minister"</abbr> PM Boris Johnson is currently in quarantine. So is his <abbr title ="Chief advisor"</abbr></em> CA Daniel</em> Cumming,<em> <abbr title="Chief Medical Officer"</abbr> </em>CMO Professor Whitty and the <abbr title=Health Secretary</abbr> <em>Matt Hancock</em>
 </p>.</b>Quite difficult to know where this ends.</p>
-<p><b>BE SAFE. STAY AT HOME AND SAVE LIVES.</b> 
-</p>
+<p class="credits"><b>BE SAFE. STAY AT HOME AND SAVE LIVES.</b> </p>
 
 
 <h2>Day 3</h2>
@@ -79,6 +144,7 @@ I didn't do much of coding apart from learning linking web pages within websites
 <p>Today got to learn about Tables, Rows and columns.Quite a bit to take in but seems doable. Decided to practice my new acquired knowledge while compiling the figures to date on the impact of COVID19.The casualties seem to increase in most parts of the world especially the USA and Europe.Although on the positive note, figures of new infections in Spain and Italy are lowering giving the belief that the peak has been reached. However there is hesitation in celebrating these developments as it may give the population a false sense of security  which may lead to relaxation towards the social distancing policies that have led to this improvement in numbers.France however saw a spike of over 800 deaths which is in contrast to the 300 and 400 deaths last Friday and Saturday respectively. A stack reminder that the battle is not over yet. In England the death toll today was 438 and our PM Boris Johnson has been admitted into intensive care in the St Thomas Hospital after his condition worsened this afternoon. We pray for him and his family.
 
 </p>
+
 
 <table>
 <tr>
@@ -113,7 +179,7 @@ I didn't do much of coding apart from learning linking web pages within websites
 <br /><br />
 
 <tr>
-<th scope "row">Recovered</th>
+<th scope ="row">Recovered</th>
 <td>unknown</td>
 <td>18,940</td>
 <td>40,437</td>
@@ -150,6 +216,8 @@ I didn't do much of coding apart from learning linking web pages within websites
 
 
 </table>
+
+
 <br /><br /><br />
 
 <h2>Day 7</h2>
@@ -158,7 +226,7 @@ I didn't do much of coding apart from learning linking web pages within websites
 <p>Username:
 <input type="text" name="username" size="15" maxlength="30" />
 </p>Password:
-<input type"text" name="password" size="15" maxlength="30" />
+<input type="text" name="password" size="15" maxlength="30" />
 </forms>
 <br /><br /><br />
 
@@ -286,7 +354,7 @@ Gender:
 <p>Email input</p>
 <form action="http://www.example.org/subscribe.php">
 <p>Please enter you email address:</p>
-<input type="email name="email" />
+<input type="email name"="email" />
 <input type="submit" value="submit" />
 </form>
 <br /><br />
@@ -342,26 +410,45 @@ loops>
 </video>
 <br />
 
-<video poster="images/KezianneCyprus.jpeg" width="400" height="320" preload controls loop>
-<source scr="video/KezianneModels.mp4" type='video/mp4:codecs="cvcl.42E01E. mp4a.40.2"' />
-<source scr""Razianne violin.mov" type='video/mov:codecs="vp8.vorbis"' />
-<p>A video of kezianne and Razianne showcasing</p>
-</video>
 
 
 
 <h5>Adding audio to my page of 'TheOneThing Book</h5>
-<audio src="TheONEthing.mp3" controls autoplay>
+<audio src="TheONEthing.mp3" controls >
 <p>This browser does not support our audio format.</p>
 </audio>
 <br /> <br />
 
 <h2>Day 10</h2>
+<p>
 Yesterday I started learning CSS and used some of my knowledge to update on this page. The Corona virus is still a serious public health issue. There have been a further 778 deaths today bring the total to 12,107. I feel sorry for all that have lost loved ones.Today the national quarantine measures are to continue for a further 3 weeks. 
+</p>
+
+<h2>Day 11</h2>
+<p class="intro">Today is the 20/04/20. We have had  a sunny weekend in <a class= "credits">london </a> and had chance to go for a walk along the river next to my house. Took my daughter with him and we both had a great time. it is a month since we had ventured out and attached some photos. On the code fron i have been learning CSS but the concepts arenumerous and not bee able to include them in all my work, so I have decided to include them in todays text. Pardon me for the inconsistencies in today's post. 
+</p>
+<p>
+
+<tr>
+<td><img src="collinsriver.jpeg" width="200" height="150" alt="collins at the River" /> </td>
+	<td class="description"> This is a photo of me at the River Thames side walk by Battersea rise. first day out after 30 days of Lockdown.</td>
+
+</tr>
+</p>
 
 
+<p>
+
+<tr>
+<td><img src="kkriver.jpeg" width="200" height="150" alt="kk at the River" /> </td>
+	<td class="description"> This is a photo of Kezianne riding her scooter by the River banks during the corona lockdown. it was a great sunny sunday and was a pleasure to get some fresh air after a month of lockdown. .</td>
+
+	
+</tr>
+</p>
 
 </body>
+
 </centre>
 
 </html>
